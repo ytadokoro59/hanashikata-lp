@@ -1,0 +1,23 @@
+# Claude Code設定
+.claude/
+
+# 別プロジェクト
+nezumi-lp/
+
+# 不使用画像（日本語ファイル名・未整理素材）
+images/531___.png
+images/hero-main.jpg.png
+images/PXL_20260518_044735840.jpg
+images/エントランス.jpg
+images/カウンセリングスペースの様子.jpg
+images/メインで使用していた画像.jpg
+images/レッスンの様子.png
+images/ロゴ.png
+images/待合スペース.jpg
+images/教室内の様子.jpg
+images/教室内の様子2.jpg
+images/教室内の様子_お客様あり.jpg
+
+# OS
+.DS_Store
+Thumbs.db
