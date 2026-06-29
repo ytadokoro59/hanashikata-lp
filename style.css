@@ -576,9 +576,21 @@ ul { list-style: none; }
   font-size: 12px; color: var(--color-primary-dark); margin-top: 8px;
   font-weight: 500;
 }
+/* 料金補足ブロック */
+.price-supplement {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-accent);
+}
+
 .price-note {
   font-size: 12px; color: var(--color-text-light);
-  margin-top: 20px; padding: 12px 16px;
+  margin-top: 16px; padding: 12px 16px;
   background: #fff; border-radius: var(--radius-sm);
   border: 1px solid var(--color-border); line-height: 1.8;
 }
