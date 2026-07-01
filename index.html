@@ -669,7 +669,7 @@
 
     <div class="price-note fade-in">
       <p><strong>お支払い方法：</strong>現金・クレジットカード</p>
-      <p><strong>受付時間：</strong>10:00〜21:00</p>
+      <p><strong>受付時間：</strong>12:00〜21:00</p>
     </div>
 
     <!-- CTA：料金後 -->
@@ -1024,14 +1024,8 @@
     <h2 class="section-title">無料体験の<br>お申し込み</h2>
     <p class="section-lead">勧誘なし。まずはお気軽にどうぞ。</p>
 
-    <!--
-      ▼ TODO: FormspreeのエンドポイントURLに差し替え ▼
-      1. https://formspree.io/ で無料登録し、新規フォームを作成
-      2. 発行される form ID（例：xyzabcd）を取得
-      3. 下の action="https://formspree.io/f/YOUR_FORM_ID" の「YOUR_FORM_ID」を実IDに差し替える
-      ※ 差し替えるまでは送信されません（送信時にその旨アラート表示されます）。
-    -->
-    <form class="form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <!-- Formspree エンドポイント設定済み（form ID: mlgypglb） -->
+    <form class="form" id="contact-form" action="https://formspree.io/f/mlgypglb" method="POST">
 
       <!-- Formspree用 hidden 項目 -->
       <input type="hidden" name="_subject" value="【話し方教室アナグラム】無料体験お申し込み" />
@@ -1061,10 +1055,6 @@
             <input type="radio" name="location" value="八王子教室" />
             <span>八王子教室（東京都八王子市三崎町5-16）</span>
           </label>
-          <label class="form-radio">
-            <input type="radio" name="location" value="その他エリア相談" />
-            <span>その他エリアを相談したい</span>
-          </label>
         </div>
       </div>
 
@@ -1076,10 +1066,6 @@
       <div class="form-group">
         <label class="form-label">時間帯（第1希望）<span class="required">必須</span></label>
         <div class="form-time-group">
-          <label class="form-time-checkbox">
-            <input type="checkbox" name="first_choice_time[]" value="10:00–12:00" />
-            <span>10:00–12:00</span>
-          </label>
           <label class="form-time-checkbox">
             <input type="checkbox" name="first_choice_time[]" value="12:00–15:00" />
             <span>12:00–15:00</span>
@@ -1104,10 +1090,6 @@
       <div class="form-group">
         <label class="form-label">時間帯（第2希望・任意）<span class="optional">任意</span></label>
         <div class="form-time-group">
-          <label class="form-time-checkbox">
-            <input type="checkbox" name="second_choice_time[]" value="10:00–12:00" />
-            <span>10:00–12:00</span>
-          </label>
           <label class="form-time-checkbox">
             <input type="checkbox" name="second_choice_time[]" value="12:00–15:00" />
             <span>12:00–15:00</span>
@@ -1145,42 +1127,8 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label">希望コース<span class="optional">任意</span></label>
-        <div class="form-radio-group">
-          <label class="form-radio">
-            <input type="radio" name="course" value="無料体験を希望" />
-            <span>無料体験を希望（まずは体験から）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="はじめてプラン【月4時間】" />
-            <span>はじめてプラン【月4時間】26,400円（税込）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="ライトプラン【月2時間】" />
-            <span>ライトプラン【月2時間】14,300円（税込）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="単発集中プラン【1回90分】" />
-            <span>単発集中プラン【1回90分】11,000円（税込）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="単発プラン【1回60分】" />
-            <span>単発プラン【1回60分】7,700円（税込）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="徹底プラン【月8時間】" />
-            <span>徹底プラン【月8時間】44,880円（税込）</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="course" value="まだ決まっていない・相談したい" />
-            <span>まだ決まっていない・相談したい</span>
-          </label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="message">その他メッセージ<span class="optional">任意</span></label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="気になること・不安なことはなんでもお聞きください。"></textarea>
+        <label class="form-label" for="message">その他ご要望・ご相談<span class="optional">任意</span></label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="ご希望やご相談内容があればご記入ください"></textarea>
       </div>
 
       <div class="form-submit">
@@ -1191,7 +1139,7 @@
         </button>
         <p class="form-note">
           送信後、担当者より日程調整のご連絡をいたします。<br>
-          受付時間：10:00〜21:00
+          受付時間：12:00〜21:00
         </p>
       </div>
     </form>
@@ -1242,7 +1190,7 @@
   <p class="site-footer__tagline">国分寺・八王子エリア対応</p>
   <p class="site-footer__tagline">対面マンツーマン話し方レッスン</p>
   <p class="site-footer__tagline">パソコン教室ピア 国分寺教室・八王子教室にて実施</p>
-  <p class="site-footer__tagline" style="margin-top:8px;">受付時間：10:00〜21:00</p>
+  <p class="site-footer__tagline" style="margin-top:8px;">受付時間：12:00〜21:00</p>
   <div class="site-footer__links">
     <a href="privacy.html">プライバシーポリシー</a>
     <a href="commercial-law.html">特定商取引法に基づく表記</a>
